@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Jolly+Lodger&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace, 'Jolly Lodger';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 3rem 6rem 0 6rem;
+    padding: 0;
+    background-color: #222;
+    
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem;
+}
+
+.nav-tag:hover{
+    text-decoration:line-through; 
+    text-decoration-color: #000000;
+    text-decoration-thickness: 4px;
+}
+
+/* main */
+.home-section1{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.profile-pic{
+    height: 585px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.main-text{
+    background-color: #A189C1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 8px;
+}
+
+.main-p1{
+    font-size: 1.5rem;
+}
+
+.main-p2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
+}
+
+.jolly{
+    font-size: 4rem;
+    font-family: 'Jolly Lodger';
+}
+
+.jolly-small{
+    font-size: 2rem;
+    font-family: 'Jolly Lodger';
+}
+
+.jolly-big{
+    font-size: 6rem;
+    font-family: 'jolly lodger';
+}
+
+.main-p3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -0.5rem;
+}
+
+.main-button{
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 3px 2rem;
+}
+
+.main-button:hover{
+    background-color: orange;
+    transition: 0.2s;
+}
+
+.logo-wrapper{
+    padding: 1rem;
+}
+
+.logo-link{
+    padding: 0;
+
+}
+
+.logo{
+    height: 42px;
+}
+
+.logo-white{
+    filter: invert() !important;
+}
+
+.logo:hover{
+    filter: hue-rotate(-250deg);
+}
+
+/* about me */
+
+.content-section1{
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.reversed-content{
+    flex-direction: row-reverse;
+}
+
+.reversed-content-text{
+    margin-left: 1rem;
+    margin-right: 0 !important;
+
+}
+
+.content-text{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start ;
+    margin-right: 1rem;
+    border-radius: 8px;
+    /* 0 runt 00 uppe/ner Sidorna 0000 uppe höger nere vänster */
+    padding: 0 3rem;
+}
+
+.img-wrapper{
+    /* max-height: 648px; */
+    max-width: 405px;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.img-layout{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.grayscale{
+    filter: grayscale(100%);
+}
+
+.content-p1{
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.sign{
+    align-self: flex-end;
+}
+
+.jolly-small{
+    margin-left: -2rem;
+    margin-bottom: -1rem;
+}
+
+/* contact me */
+
+.contact-section1{
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+}
+
+.contact-text{
+    background-color: black;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 8px;
+}
+
+.contact-container{
+    background-color: #fff;
+    width: 100%;
+   padding: 0 2rem;
+   border-radius: 0 0 8px 8px;
+   border: 3px solid #000;
+}
+
+.contact-logo{
+    margin-right: 1rem;
+}
+
+.contect-links{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    padding: 1rem;
+    background-color: #000;
+    margin: 0 -6rem !important;
+}
+
+.footer-text{
+    color: #767676;
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    .main-button{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+    .img-wrapper{
+        height: auto;
+        width: 100%;
+    }
+    
+  }
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 1rem 1rem 0 1rem;
+        overflow-x: hidden;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .nav-tag{
+        padding: 0 0.3rem;
+    }
+
+    .home-section1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        border: 3px solid black;
+        border-radius: 8px;
+    }
+
+    .profile-pic{
+       border: none;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-text{
+        margin-left: 0;
+        border-radius: 0 0 8px 8px;
+        border: none;
+        border-top: 3px solid black;
+        padding-top: 1rem;
+    }
+
+    .main-p3{
+        padding-bottom: 0.5rem;
+    }
+
+    .main-button{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+
+    .content-section1{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        border: 3px solid black;
+        border-radius: 8px;
+    }
+
+    .content-text{
+        padding: 0 1rem;
+    }
+
+    .reversed-content-text{
+        margin: 0;
+    }
+
+    .content-text{
+        border-radius: 8px 8px 0 0;
+    }
+
+    .img-wrapper{
+        border-radius: 0 0 8px 8px;
+        border: none;
+        border-top: 3px solid black;
+    }
+
+    .contact-text{
+        width: 100%;
+        margin: 0;
+    }
+    
+  }
